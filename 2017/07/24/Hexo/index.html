@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>使用Hexo搭建个人博客 | FX的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###安装Hugo  首先安装Git,Node.js 安装hexo  hexo的常用的命令  1234$ hexo g  #完整命令为hexo generate,用于生成静态文件$ hexo s  #完整命名为hexo server,用于启动服务器，主要用来本地预览$ hexo d  #完整命令为hexo deploy,用于将本地文件发布到github上$ hexo n  #完整命令为hexo n">
+  <meta name="description" content="###安装Hugo1.首先安装Git,Node.js 2.安装hexohexo的常用的命令 1234$ hexo g  #完整命令为hexo generate,用于生成静态文件$ hexo s  #完整命名为hexo server,用于启动服务器，主要用来本地预览$ hexo d  #完整命令为hexo deploy,用于将本地文件发布到github上$ hexo n  #完整命令为hexo ne">
 <meta name="keywords" content="hexo,blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Hexo搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2017/07/24/Hexo/index.html">
 <meta property="og:site_name" content="FX的博客">
-<meta property="og:description" content="###安装Hugo  首先安装Git,Node.js 安装hexo  hexo的常用的命令  1234$ hexo g  #完整命令为hexo generate,用于生成静态文件$ hexo s  #完整命名为hexo server,用于启动服务器，主要用来本地预览$ hexo d  #完整命令为hexo deploy,用于将本地文件发布到github上$ hexo n  #完整命令为hexo n">
-<meta property="og:updated_time" content="2017-07-24T07:15:06.369Z">
+<meta property="og:description" content="###安装Hugo1.首先安装Git,Node.js 2.安装hexohexo的常用的命令 1234$ hexo g  #完整命令为hexo generate,用于生成静态文件$ hexo s  #完整命名为hexo server,用于启动服务器，主要用来本地预览$ hexo d  #完整命令为hexo deploy,用于将本地文件发布到github上$ hexo n  #完整命令为hexo ne">
+<meta property="og:updated_time" content="2017-07-24T07:25:18.728Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo搭建个人博客">
-<meta name="twitter:description" content="###安装Hugo  首先安装Git,Node.js 安装hexo  hexo的常用的命令  1234$ hexo g  #完整命令为hexo generate,用于生成静态文件$ hexo s  #完整命名为hexo server,用于启动服务器，主要用来本地预览$ hexo d  #完整命令为hexo deploy,用于将本地文件发布到github上$ hexo n  #完整命令为hexo n">
+<meta name="twitter:description" content="###安装Hugo1.首先安装Git,Node.js 2.安装hexohexo的常用的命令 1234$ hexo g  #完整命令为hexo generate,用于生成静态文件$ hexo s  #完整命名为hexo server,用于启动服务器，主要用来本地预览$ hexo d  #完整命令为hexo deploy,用于将本地文件发布到github上$ hexo n  #完整命令为hexo ne">
   
     <link rel="alternative" href="/atom.xml" title="FX的博客" type="application/atom+xml">
   
@@ -170,35 +170,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###安装Hugo</p>
-<ol>
-<li>首先安装Git,Node.js</li>
-<li><p>安装hexo</p>
-<p> hexo的常用的命令</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo g  <span class="comment">#完整命令为hexo generate,用于生成静态文件</span></div><div class="line">$ hexo s  <span class="comment">#完整命名为hexo server,用于启动服务器，主要用来本地预览</span></div><div class="line">$ hexo d  <span class="comment">#完整命令为hexo deploy,用于将本地文件发布到github上</span></div><div class="line">$ hexo n  <span class="comment">#完整命令为hexo new,用于新建一篇文章</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-<a id="more"></a>
-<pre><code>鼠标右键任意地方，选择Git Bash，使用以下命令安装hexo
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
-
-如果之后在使用过程中，遇到以下错误
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ERROR Deployer not found : github</div></pre></td></tr></table></figure>
-
-则运行以下命令，或者你直接先运行这个命令更好
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-
-接下来创建放置博客文件的文件：Hexo文件夹。（名字和位置自由选择，最好不
-要放在中文目录下），如我的位置<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Git Bash，执行以下命令，Hexo会自动在该文件夹下下载搭建网站 所需的所有文件</div><div class="line">```bash</div><div class="line">$ hexo init</div></pre></td></tr></table></figure>
-
-安装依赖包
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install</div></pre></td></tr></table></figure>
-
-在<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">```bash</div><div class="line">$ hexo g</div><div class="line">$ hexo s</div></pre></td></tr></table></figure>
-
-然后用浏览器访问<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">    是在本地的，别人是看不到的。</div><div class="line"></div><div class="line">###注册Github账号</div><div class="line">   </div><div class="line">   已有Github账号跳过此步，首先进入Github进行注册，用户名，邮箱和密码之后都需要用到。</div><div class="line">###创建repository</div><div class="line">   repository相当于一个仓库，用来放置你的代码文件，首先，登陆进入Github，并进入个人页面，选择Repositories,</div><div class="line">   然后New一个repository</div><div class="line">   &lt;img src=&quot;../assets/blogImg/20170724150118.png&quot;/&gt;</div><div class="line">   创建时，只需要填写Repository  name即可，当然这个名字的格式必须为你的github用户名,我的是FX00.github.io</div><div class="line">   &lt;img src=&quot;../assets/blogImg/20170724150249.png&quot;/&gt;</div><div class="line">###部署本地文件到Github</div><div class="line">   既然Repository已经创建，当然先把博客放到Github上去看看效果，编辑```C:\web\Hexo```下的```_config.yml```文件。</div><div class="line">   在```_config.yml```最下方，添加如下配置</div></pre></td></tr></table></figure>
-</code></pre><p>   deploy:<br>      type: git<br>      repository: <a href="http://github.com/huangjunhui/huangjunhui.github.io.git" target="_blank" rel="external">http://github.com/huangjunhui/huangjunhui.github.io.git</a><br>      branch: master<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">配置好并保存后，执行以下命令部署到Github上。</div><div class="line">```bash</div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
-<p>###发表一篇文章<br>    1.在Git Bash执行命令：<code>$ hexo new &quot;my first post&quot;</code><br>    2.在<code>C:\web\Hexo\source\_post</code>中打开my-first-post.md编辑</p>
+        <p>###安装Hugo<br>1.首先安装Git,Node.js</p>
+<p>2.安装hexo<br>hexo的常用的命令</p>
+<pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo g  <span class="comment">#完整命令为hexo generate,用于生成静态文件</span></div><div class="line">$ hexo s  <span class="comment">#完整命名为hexo server,用于启动服务器，主要用来本地预览</span></div><div class="line">$ hexo d  <span class="comment">#完整命令为hexo deploy,用于将本地文件发布到github上</span></div><div class="line">$ hexo n  <span class="comment">#完整命令为hexo new,用于新建一篇文章</span></div></pre></td></tr></table></figure>
+</code></pre><a id="more"></a>
+<p>   鼠标右键任意地方，选择Git Bash，使用以下命令安装hexo</p>
+<pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
+</code></pre><p>   如果之后在使用过程中，遇到以下错误<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ERROR Deployer not found : github</div></pre></td></tr></table></figure></p>
+<p>   则运行以下命令，或者你直接先运行这个命令更好</p>
+<pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+</code></pre><p>   接下来创建放置博客文件的文件：Hexo文件夹。（名字和位置自由选择，最好不<br>   要放在中文目录下），如我的位置<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Git Bash，执行以下命令，Hexo会自动在该文件夹下下载搭建网站 所需的所有文件</div><div class="line"></div><div class="line"> ```bash</div><div class="line"> $ hexo init</div></pre></td></tr></table></figure></p>
+<p>   安装依赖包</p>
+<pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install</div></pre></td></tr></table></figure>
+</code></pre><p>   在<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">```bash</div><div class="line">$ hexo g</div><div class="line">$ hexo s</div></pre></td></tr></table></figure></p>
+<p>   然后用浏览器访问<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">   是在本地的，别人是看不到的。</div><div class="line"></div><div class="line">###注册Github账号</div><div class="line">   已有Github账号跳过此步，首先进入Github进行注册，用户名，邮箱和密码之后都需要用到。</div><div class="line">###创建repository</div><div class="line">   repository相当于一个仓库，用来放置你的代码文件，首先，登陆进入Github，并进入个人页面，选择Repositories,</div><div class="line">   然后New一个repository</div><div class="line">   &lt;img src=&quot;../assets/blogImg/20170724150118.png&quot;/&gt;</div><div class="line">   创建时，只需要填写Repository  name即可，当然这个名字的格式必须为你的github用户名,我的是FX00.github.io</div><div class="line">   &lt;img src=&quot;../assets/blogImg/20170724150249.png&quot;/&gt;</div><div class="line">###部署本地文件到Github</div><div class="line">   既然Repository已经创建，当然先把博客放到Github上去看看效果，编辑```C:\web\Hexo```下的```_config.yml```文件。</div><div class="line">   在```_config.yml```最下方，添加如下配置</div></pre></td></tr></table></figure></p>
+<p>   deploy:<br>      type: git<br>      repository: <a href="http://github.com/FX00/FX00.github.io.git" target="_blank" rel="external">http://github.com/FX00/FX00.github.io.git</a><br>      branch: master<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">配置好并保存后，执行以下命令部署到Github上。</div><div class="line"></div><div class="line">```bash</div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
+<p>###发表一篇文章<br>1.在Git Bash执行命令：<code>$ hexo new &quot;my first post&quot;</code><br>2.在<code>C:\web\Hexo\source\_post</code>中打开my-first-post.md编辑</p>
 
       
 
